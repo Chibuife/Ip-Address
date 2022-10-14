@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>  
+    <link rel="stylesheet" href="/ipAddress/appsass/ipAddress.css">
+    <title>Document</title>
+</head>
+<body >
+    <div class="body">
+        <div class="preload">
+            <div class="lds-hourglass"></div></div>
+    <img class="pattern" src="appimg\pattern-bg.png" alt="">
+    <div class="ipBackground">
+    <h1>IP Address Tracker</h1>
+    <div class="search">
+    <input class="searchinput" id='searchipAddressInputs' type="numbers" placeholder="Search for any IP address or domain">
+    <div class="searchBtn"><img src="/ipAddress/appimg/icon-arrow.svg" alt=""></div>
+    </div>
+    <div class="ipdetails">
+        <div class="detailbox">
+            <div>IP ADDRESS</div>
+            <h2></h2>
+        </div>
+        <div class="detailbox">
+            <div>LOCATION</div>
+            <h2></h2>
+        </div>
+        <div class="detailbox">
+            <div>TIMEZONE</div>
+            <h2></h2>
+        </div>
+        <div class="detailbox" style="border: none;">
+            <div>ISP</div>
+            <h2></h2>
+        </div>
+    </div>
+    </div>
+   
+    <div id="mapID"></div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
